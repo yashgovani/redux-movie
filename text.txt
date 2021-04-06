@@ -1,0 +1,9 @@
+https://api.themoviedb.org/3/movie/550?api_key=70fdad2a997cb9f5f3d081563775c61f
+
+
+
+https://api.themoviedb.org/3/genre/movie/list?api_key=70fdad2a997cb9f5f3d081563775c61f&language=en-US
+
+
+https://api.themoviedb.org/3/discover/movie?api_key=70fdad2a997cb9f5f3d081563775c61f&language=en-US&with_genres=
+
