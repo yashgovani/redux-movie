@@ -1,0 +1,83 @@
+/* .MovieImage {
+  height: 300px;
+  width: 100%;
+}
+
+.MoviePanel {
+  display: inline-block;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  width: 300px;
+  padding: 10px;
+  height: 400px;
+  overflow: scroll;
+  
+  border: 2px solid #dcdcdc;
+  margin: 3px;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+
+.MovieDesc {
+  text-align: center;
+}
+
+.MovieRating {
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0;
+}
+ */
+
+.MovieImage {
+  height: 300px;
+  width: 300px;
+}
+
+.flip-card {
+  display: inline-block;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: transparent;
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  margin: 10px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: aqua;
+  color: black;
+}
+
+.flip-card-back {
+  text-align: center;
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
